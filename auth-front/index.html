@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NestJS Auth Frontend</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <h1>NestJS Auth Frontend</h1>
+    <div id="message"></div>
+
+    <!-- Registration Form -->
+    <h2>Registration</h2>
+    <form id="registrationForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required />
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+      <label for="password">Password confirmation:</label>
+      <input type="password" id="passwordConfirm" required />
+      <button type="submit">Register</button>
+    </form>
+
+    <!-- Login Form -->
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="loginUsername">Username:</label>
+      <input type="text" id="loginUsername" required />
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- User Profile -->
+    <h2>User Profile</h2>
+    <button id="logoutButton">Logout</button>
+    <div id="profile"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
